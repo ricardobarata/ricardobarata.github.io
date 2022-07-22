@@ -1,0 +1,70 @@
+@import 'themes.scss';
+@import 'typography.scss';
+@import 'banner.scss';
+@import 'content.scss';
+@import 'scrollbar.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    scroll-behavior: smooth;
+
+    .hidden {
+        display: none;
+    }
+
+    #main__loading {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        bottom: 45%;
+    }
+
+    #main__loading > div {
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 100%;
+        display: inline-block;
+        -webkit-animation: bouncedelay 1.4s infinite ease-in-out both;
+        animation: bouncedelay 1.4s infinite ease-in-out both;
+    }
+
+    #main__loading .dot1 {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+    }
+
+    #main__loading .dot2 {
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+    }
+
+    @-webkit-keyframes bouncedelay {
+        0%,
+        80%,
+        100% {
+            -webkit-transform: scale(0);
+        }
+        40% {
+            -webkit-transform: scale(1);
+        }
+    }
+
+    @keyframes bouncedelay {
+        0%,
+        80%,
+        100% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+        40% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+}

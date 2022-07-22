@@ -1,0 +1,29 @@
+$theme: (
+    primary: (
+        bodyBackgroundColor: #009fb7,
+        bannerBackgroundColor: #ffee58,
+        bannerForegroundColor: black,
+        cardForegroundColor: black,
+        cardBackgroundColor: white,
+        aboutButtonColor: black,
+        aboutLinkColor: black,
+        socialIconsColor: rgba(0, 0, 0, 0.8),
+    ),
+    secondary: (
+        bodyBackgroundColor: darkcyan,
+        bannerBackgroundColor: #871f78,
+        bannerForegroundColor: white,
+        cardForegroundColor: white,
+        cardBackgroundColor: #333333,
+        aboutButtonColor: white,
+        aboutLinkColor: white,
+        socialIconsColor: white,
+    ),
+);
+
+// colors that don't belong in themes
+$scrollbar-track-color: #3f4361;
+$scrollbar-thumb-color: #1d2038;
+$banner-box-shadow-color: black;
+$card-box-shadow-color: rgba(0, 0, 0, 0.2);
+$about-verified-icon-color: rgb(76, 175, 80);

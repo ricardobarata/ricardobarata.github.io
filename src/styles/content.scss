@@ -1,0 +1,161 @@
+@import 'variables.scss';
+@import 'colors.scss';
+
+main {
+    max-width: 95%;
+    margin: 5.5em auto 1em auto;
+    column-count: 1;
+    column-gap: 1em;
+
+    @media all and (min-width: $viewport-tablet) {
+        max-width: 60%;
+        margin: 6em auto 2em auto;
+        column-count: 2;
+        column-gap: 0em;
+    }
+
+    .card {
+        border-radius: 2px;
+        padding: 1em;
+        margin: 1em;
+        display: inline-block;
+        vertical-align: top;
+        box-shadow: 1px 1px 6px 2px $card-box-shadow-color;
+
+        h2 {
+            padding-bottom: 0.5em;
+        }
+
+        &.intro {
+            width: -webkit-fill-available;
+            width: -moz-available;
+
+            h2 {
+                font-size: 2em;
+            }
+        }
+
+        &.about {
+            padding: 0;
+
+            .about__head {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 1em;
+
+                svg {
+                    transform: scale(1.25);
+                    color: $about-verified-icon-color;
+                }
+
+                div {
+                    padding-left: 0.5em;
+                }
+            }
+
+            .about__profile {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: navajowhite;
+                padding: 1em;
+                .profile {
+                    width: 55%;
+                }
+            }
+
+            .about__body {
+                padding: 1em;
+                .body__row {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .hashtag,
+                    .icons {
+                        font-weight: 500;
+                        font-size: 1.1em;
+                        button {
+                            background-color: transparent;
+                            border: 0;
+                            padding: 0;
+                            font-size: 1em;
+                            &:focus {
+                                outline: none;
+                                border-radius: 100%;
+                            }
+                        }
+                    }
+                    padding-bottom: 1em;
+                }
+            }
+        }
+
+        &.radar {
+            #radar {
+                width: 100%;
+                height: 20em;
+                padding-top: 1em;
+            }
+        }
+
+        &.fe {
+            .graphics-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 2em 5em;
+                width: 50%;
+                margin: auto;
+
+                .smiley {
+                    width: 45%;
+                    margin-left: -40%;
+                    animation: spin 1s linear infinite, float 1s linear infinite;
+                }
+
+                .beach {
+                    width: 75%;
+                    background: cornflowerblue;
+                    border-radius: 100%;
+                    border: solid 0.5em white;
+                }
+            }
+        }
+
+        &.social {
+            width: -webkit-fill-available;
+            width: -moz-available;
+            text-align: center;
+            .social__links {
+                font-size: 1.2em;
+                padding: 0.25em;
+                display: flex;
+                flex-direction: column;
+                a {
+                    text-decoration: none;
+                    svg {
+                        width: 50%;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes float {
+    50% {
+        transform: translate(0, 20px);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

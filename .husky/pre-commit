@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+git update-index --refresh
+npm run prettier:verify
+npm run lint

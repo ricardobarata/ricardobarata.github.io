@@ -1,0 +1,28 @@
+{
+    "BANNER": {
+        "SKIP_TO_MAIN": "Ir para o conteúdo principal",
+        "THEME": "Mudar tema",
+        "ENGLISH": "Língua inglesa",
+        "PORTUGUESE": "Língua Portuguesa"
+    },
+    "INTRO": {
+        "HEADER": "Olá, eu sou o Ricardo",
+        "PARAGRAPH1": "Sou um Programador de Software nascido em Portugal atualmente a viver no Reino Unido.",
+        "PARAGRAPH2": "Programo tanto Back como Front-End mas tenho um carinho especial pelo lado visual das coisas."
+    },
+    "RADAR": {
+        "HEADER": "Tecnologias",
+        "PARAGRAPH": "Nos últimos {{ years }} anos programei em várias linguagens. Atualmente, a minha experiência comercial anda em torno de React, Angular e Java. Em baixo está uma representação de algumas das tecnologias com que passei tempo comercialmente e o quanto as sei por dentro e por fora."
+    },
+    "ABOUT": {
+        "SUBTITLE": "Programador de Software",
+        "PARAGRAPH": "Por norma, sou uma pessoa aventureira, amigável e flexível (em termos de personalidade, não fisicamente...já não consigo chegar aos meus dedos dos pés). Gosto de estar ao ar livre quando o sol está lá em cima. Gosto de ouvir Turbowolf. Duas das coisas mais incríveis que me lembro de fazer incluem fazer paraquedismo em Portugal e ir aos Alpes para uma caminhada de 170km com 10km de subida/descida com uma tenda de festival. Mudar-me para outro país não deve estar muito atrás. Há mais ou menos {{ years }} anos que estou a viver no Reino Unido, em Bristol, uma das cidades mais fixes de Inglaterra. Adoro os desafios de programar tanto em termos comerciais como para os meus próprios projetos."
+    },
+    "FE": {
+        "HEADER": "Front-End vs Back-End",
+        "PARAGRAPH": "De momento passo mais tempo a programar Front-End. Apesar de me considerar um programador Full Stack, sinto que é no Front-End que consigo mostrar algo mais, para além de ser onde mais gosto de trabalhar."
+    },
+    "SOCIAL": {
+        "FINDME": "Encontra-me no"
+    }
+}

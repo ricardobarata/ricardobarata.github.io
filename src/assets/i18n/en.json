@@ -1,0 +1,28 @@
+{
+    "BANNER": {
+        "SKIP_TO_MAIN": "Skip to main content",
+        "THEME": "Switch theme",
+        "ENGLISH": "English Language",
+        "PORTUGUESE": "Portuguese Language"
+    },
+    "INTRO": {
+        "HEADER": "Hello, I'm Ricardo",
+        "PARAGRAPH1": "I'm a Software Developer from Portugal currently based in the UK.",
+        "PARAGRAPH2": "I code both Back and Front-End but I have a special love for the UI end of things."
+    },
+    "RADAR": {
+        "HEADER": "Technology Stack",
+        "PARAGRAPH": "During the last {{ years }} years I've coded and played with many languages. Currently, my commercial experience revolves around React, Angular and Java. Below is a visual representation of some of the technologies that I've spent time working with and how much I know them inside and out."
+    },
+    "ABOUT": {
+        "SUBTITLE": "Software Developer",
+        "PARAGRAPH": "I'm an adventurer and a friendly, flexible person (personality wise not body wise...I can't really reach my toes). I enjoy being outdoors when the sun is shining. I love to listen to Turbowolf. The craziest things I remember doing include skydiving in Portugal and going to the Alps for a 170km hike with 10km ascent/descent with a one layer festival tent. Moving to another country to live in is not very far off. I've been in the UK for roughly {{ years }} years, living in Bristol, one of the coolest cities of England. I enjoy the challenges of coding both for work or my own projects."
+    },
+    "FE": {
+        "HEADER": "Front-End vs Back-End",
+        "PARAGRAPH": "At the moment I spend more time coding Front-End. Even though I consider myself a Full Stack Developer at heart, I feel the Front-End is where I shine, thrive most and enjoy working."
+    },
+    "SOCIAL": {
+        "FINDME": "Find me on"
+    }
+}

@@ -1,0 +1,208 @@
+@import 'colors.scss';
+@import 'functions.scss';
+
+.theme-primary {
+    background-color: map-deep-get($theme, 'primary', 'bodyBackgroundColor');
+    .banner {
+        color: map-deep-get($theme, 'primary', 'bannerForegroundColor');
+        background-color: map-deep-get($theme, 'primary', 'bannerBackgroundColor');
+
+        button {
+            &.btn {
+                &-active {
+                    color: white;
+                    background-color: black;
+                }
+                &-inactive {
+                    color: black;
+                    &:hover {
+                        background-color: rgba($color: white, $alpha: 0.8);
+                    }
+                }
+                &.btn-left {
+                    border-bottom-color: black;
+                    border-top-color: black;
+                    border-left-color: black;
+                }
+                &.btn-right {
+                    border-bottom-color: black;
+                    border-top-color: black;
+                    border-right-color: black;
+                }
+
+                &.btn-solo {
+                    border-color: black;
+                    &.btn-active:hover {
+                        color: black;
+                        background-color: rgba($color: white, $alpha: 0.8);
+                    }
+                    &.btn-inactive:hover {
+                        color: white;
+                        background-color: rgba($color: black, $alpha: 0.8);
+                    }
+                }
+
+                &:focus {
+                    color: black;
+                    background-color: rgba($color: black, $alpha: 0.2);
+                }
+            }
+        }
+    }
+    main {
+        #main__loading > div {
+            background-color: map-deep-get($theme, 'secondary', 'cardBackgroundColor');
+        }
+
+        .card {
+            color: map-deep-get($theme, 'primary', 'cardForegroundColor');
+            background-color: map-deep-get($theme, 'primary', 'cardBackgroundColor');
+
+            &.about {
+                .about__body {
+                    .body__row {
+                        .hashtag,
+                        .icons {
+                            button {
+                                color: map-deep-get($theme, 'primary', 'aboutButtonColor');
+                                &:focus {
+                                    background-color: map-deep-get($theme, 'primary', 'bodyBackgroundColor');
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.social {
+                .social__links {
+                    a {
+                        svg {
+                            path {
+                                fill: map-deep-get($theme, 'primary', 'socialIconsColor');
+                            }
+                        }
+                        &:hover {
+                            svg {
+                                path {
+                                    fill: darken(map-deep-get($theme, 'primary', 'socialIconsColor'), 20%);
+                                }
+                            }
+                        }
+                        &:focus {
+                            background-color: map-deep-get($theme, 'primary', 'bodyBackgroundColor');
+                        }
+                    }
+                }
+            }
+            .graphics-container {
+                .beach {
+                    box-shadow: darken(map-deep-get($theme, 'primary', 'cardBackgroundColor'), 10%) 0 0px 20px 8px;
+                }
+            }
+        }
+    }
+}
+
+.theme-secondary {
+    background-color: map-deep-get($theme, 'secondary', 'bodyBackgroundColor');
+    .banner {
+        color: map-deep-get($theme, 'secondary', 'bannerForegroundColor');
+        background-color: map-deep-get($theme, 'secondary', 'bannerBackgroundColor');
+
+        button {
+            &.btn {
+                &-active {
+                    color: black;
+                    background-color: white;
+                }
+                &-inactive {
+                    color: whitesmoke;
+                    &:hover {
+                        background-color: rgba($color: black, $alpha: 0.8);
+                    }
+                }
+                &.btn-left {
+                    border-bottom-color: whitesmoke;
+                    border-top-color: whitesmoke;
+                    border-left-color: whitesmoke;
+                }
+                &.btn-right {
+                    border-bottom-color: whitesmoke;
+                    border-top-color: whitesmoke;
+                    border-right-color: whitesmoke;
+                }
+
+                &.btn-solo {
+                    border-color: whitesmoke;
+                    &.btn-active:hover {
+                        color: whitesmoke;
+                        background-color: rgba($color: black, $alpha: 0.8);
+                    }
+                    &.btn-inactive:hover {
+                        color: white;
+                        background-color: black;
+                    }
+                }
+
+                &:focus {
+                    color: black;
+                    background-color: rgba($color: whitesmoke, $alpha: 0.3);
+                }
+            }
+        }
+    }
+    main {
+        #main__loading > div {
+            background-color: map-deep-get($theme, 'secondary', 'cardBackgroundColor');
+        }
+
+        .card {
+            color: map-deep-get($theme, 'secondary', 'cardForegroundColor');
+            background-color: map-deep-get($theme, 'secondary', 'cardBackgroundColor');
+
+            &.about {
+                .about__body {
+                    .body__row {
+                        .hashtag,
+                        .icons {
+                            button {
+                                color: map-deep-get($theme, 'secondary', 'aboutButtonColor');
+                                &:focus {
+                                    background-color: map-deep-get($theme, 'secondary', 'bannerBackgroundColor');
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.social {
+                .social__links {
+                    a {
+                        svg {
+                            path {
+                                fill: map-deep-get($theme, 'secondary', 'socialIconsColor');
+                            }
+                        }
+                        &:hover {
+                            svg {
+                                path {
+                                    fill: lighten(map-deep-get($theme, 'secondary', 'socialIconsColor'), 20%);
+                                }
+                            }
+                        }
+                        &:focus {
+                            background-color: map-deep-get($theme, 'secondary', 'bannerBackgroundColor');
+                        }
+                    }
+                }
+            }
+            .graphics-container {
+                .beach {
+                    box-shadow: #262424 0 0px 20px 8px;
+                }
+            }
+        }
+    }
+}

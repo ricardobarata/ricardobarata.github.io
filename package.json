@@ -1,0 +1,43 @@
+{
+    "name": "personal-website-vite",
+    "version": "0.0.0",
+    "description": "A TypeScript, Sass and Vite bundled personal website.",
+    "author": "Ricardo Barata",
+    "main": "src/index.ts",
+    "keywords": [
+        "TypeScript",
+        "Vite",
+        "Sass"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "build:preview": "rm -rf dist && npm run build && vite preview",
+        "preview": "vite preview",
+        "lint": "eslint . --ext .ts,.js && echo All files pass linting.",
+        "prettier:verify": "prettier --config --check ./.prettierrc \"**/*{.ts,.html,.scss,.json,.js}\"",
+        "prettier:fix": "prettier --config --write ./.prettierrc \"**/*{.ts,.html,.scss,.json,.js}\"",
+        "prepare": "husky install"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "6.1.1",
+        "echarts": "5.3.3",
+        "i18next": "21.8.14"
+    },
+    "devDependencies": {
+        "@types/echarts": "4.9.16",
+        "@typescript-eslint/eslint-plugin": "5.30.7",
+        "@typescript-eslint/parser": "5.30.7",
+        "eslint": "8.20.0",
+        "eslint-config-google": "0.14.0",
+        "eslint-config-prettier": "8.5.0",
+        "husky": "8.0.1",
+        "prettier": "2.7.1",
+        "prettier-plugin-organize-imports": "3.0.0",
+        "sass": "1.53.0",
+        "typescript": "4.7.4",
+        "vite": "3.0.2",
+        "vite-plugin-fonts": "^0.6.0",
+        "vite-plugin-html": "3.2.0"
+    }
+}

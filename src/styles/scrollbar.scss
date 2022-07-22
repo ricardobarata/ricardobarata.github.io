@@ -1,0 +1,16 @@
+@import 'colors.scss';
+
+* {
+    &::-webkit-scrollbar,
+    scrollbar-width {
+        width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $scrollbar-track-color;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $scrollbar-thumb-color;
+    }
+    scrollbar-width: thin;
+    scrollbar-color: $scrollbar-thumb-color $scrollbar-track-color;
+}

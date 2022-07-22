@@ -17,7 +17,8 @@
         "lint": "eslint . --ext .ts,.js && echo All files pass linting.",
         "prettier:verify": "prettier --config --check ./.prettierrc \"**/*{.ts,.html,.scss,.json,.js}\"",
         "prettier:fix": "prettier --config --write ./.prettierrc \"**/*{.ts,.html,.scss,.json,.js}\"",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "deploy": "git subtree push --prefix dist origin gh-pages"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "6.1.1",

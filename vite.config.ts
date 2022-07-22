@@ -24,7 +24,7 @@ export default defineConfig({
             // Data that needs to be injected into the index.html ejs template
             inject: {
                 data: {
-                    title: 'ricardobarata.github.io',
+                    title: 'ricardobarata ツ',
                 },
             },
         }),

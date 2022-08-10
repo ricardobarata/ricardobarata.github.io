@@ -21,23 +21,23 @@
         "deploy": "git subtree push --prefix dist origin gh-pages"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-svg-core": "6.1.1",
+        "@fortawesome/fontawesome-svg-core": "6.1.2",
         "echarts": "5.3.3",
-        "i18next": "21.8.14"
+        "i18next": "21.9.0"
     },
     "devDependencies": {
         "@types/echarts": "4.9.16",
-        "@typescript-eslint/eslint-plugin": "5.30.7",
-        "@typescript-eslint/parser": "5.30.7",
-        "eslint": "8.20.0",
+        "@typescript-eslint/eslint-plugin": "5.33.0",
+        "@typescript-eslint/parser": "5.33.0",
+        "eslint": "8.21.0",
         "eslint-config-google": "0.14.0",
         "eslint-config-prettier": "8.5.0",
         "husky": "8.0.1",
         "prettier": "2.7.1",
-        "prettier-plugin-organize-imports": "3.0.0",
-        "sass": "1.53.0",
+        "prettier-plugin-organize-imports": "3.0.3",
+        "sass": "1.54.4",
         "typescript": "4.7.4",
-        "vite": "3.0.2",
+        "vite": "3.0.5",
         "vite-plugin-fonts": "^0.6.0",
         "vite-plugin-html": "3.2.0"
     }

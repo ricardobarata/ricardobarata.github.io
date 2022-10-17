@@ -22,22 +22,22 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "6.2.0",
-        "echarts": "5.3.3",
-        "i18next": "21.9.2"
+        "echarts": "5.4.0",
+        "i18next": "21.10.0"
     },
     "devDependencies": {
         "@types/echarts": "4.9.16",
-        "@typescript-eslint/eslint-plugin": "5.37.0",
-        "@typescript-eslint/parser": "5.37.0",
-        "eslint": "8.23.1",
+        "@typescript-eslint/eslint-plugin": "5.40.0",
+        "@typescript-eslint/parser": "5.40.0",
+        "eslint": "8.25.0",
         "eslint-config-google": "0.14.0",
         "eslint-config-prettier": "8.5.0",
         "husky": "8.0.1",
         "prettier": "2.7.1",
         "prettier-plugin-organize-imports": "3.1.1",
-        "sass": "1.54.9",
-        "typescript": "4.8.3",
-        "vite": "3.1.2",
+        "sass": "1.55.0",
+        "typescript": "4.8.4",
+        "vite": "3.1.8",
         "vite-plugin-fonts": "^0.6.0",
         "vite-plugin-html": "3.2.0"
     }
